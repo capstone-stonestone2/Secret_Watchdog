@@ -93,20 +93,16 @@ your-existing-repo/                    # 사용자의 기존 저장소
 본 시스템을 **기존 프로젝트에 추가** 하려면 다음 명령어를 실행하세요.
 
 ```bash
-# 1. 기존 프로젝트 저장소로 이동
+# 1. Secret_Watchdog 레포지토리에서 install.sh 다운로드
+
+# 2. 기존 프로젝트 저장소로 이동
 cd /path/to/your/existing/project
 
-# 2. 보안 시스템을 폴더째 클론
-git clone https://github.com/gyuim/secret-watchdog.git security-system
+# 3. install.sh 실행권한 부여
+chmod u+x ./install.sh
 
-# 3. GitHub Actions가 인식할 수 있도록 워크플로우 파일을 루트로 복사
-mkdir -p .github/workflows
-cp security-system/.github/workflows/security_pipeline.yml .github/workflows/
-
-# 4. Git에 추가 및 커밋
-git add security-system/ .github/workflows/security_pipeline.yml
-git commit -m "Add AI-powered secret detection and response system"
-git push origin main
+# 4. install.sh 실행
+./install.sh
 ```
 
 > **설치 완료!** 이제 코드를 push할 때마다 자동으로 시크릿 탐지가 실행됩니다.
@@ -152,7 +148,7 @@ git push origin main
   env:
     MODEL_GDRIVE_ID: "YOUR_CUSTOM_MODEL_ID"  # 이 부분을 변경
   run: |
-    echo "🤖 Downloading AI model..."
+    echo "Downloading AI model..."
     mkdir -p models
     gdown $MODEL_GDRIVE_ID -O models/model.pt
 ```
@@ -484,7 +480,7 @@ THRESHOLD = 0.3
 
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![Transformers](https://img.shields.io/badge/🤗_Transformers-4.30+-FFD21E?style=for-the-badge)](https://huggingface.co/transformers/)
+[![Transformers](https://img.shields.io/badge/_Transformers-4.30+-FFD21E?style=for-the-badge)](https://huggingface.co/transformers/)
 
 ### Security & DevOps
 
@@ -503,7 +499,7 @@ THRESHOLD = 0.3
 ###  문의
 
 - 문제가 발생하거나 개선 제안이 있으시면 이메일로 연락주세요
-- GitHub Issues: [프로젝트 이슈 페이지](https://github.com/gyuim/secret-watchdog/issues)
+- GitHub Issues: [프로젝트 이슈 페이지](https://github.com/capstone-stonestone2/secret-watchdog/issues)
 
 ###  참고 자료
 
