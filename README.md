@@ -498,8 +498,8 @@ THRESHOLD = 0.3
 
 ###  문의
 
-- 문제가 발생하거나 개선 제안이 있으시면 이메일로 연락주세요
-- GitHub Issues: [프로젝트 이슈 페이지](https://github.com/capstone-stonestone2/secret-watchdog/issues)
+- 문제가 발생하거나 개선 제안이 있으시면 이메일로 연락주세요.
+- GitHub Issues: [프로젝트 이슈 페이지](https://github.com/capstone-stonestone2/Secret_Watchdog/issues)
 
 ###  참고 자료
 
