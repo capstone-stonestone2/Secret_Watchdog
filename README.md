@@ -494,7 +494,7 @@ THRESHOLD = 0.3
 
 </div>
 
----;
+---
 
 ###  문의
 
@@ -520,6 +520,8 @@ THRESHOLD = 0.3
 ## 논문
 
 https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12434239
+
+---
 
 <div align="center">
 
