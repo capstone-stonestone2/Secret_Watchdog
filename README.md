@@ -517,6 +517,10 @@ THRESHOLD = 0.3
 
 ---
 
+## 논문
+
+https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12434239
+
 <div align="center">
 
 **Developed with  by Capstone Team**
